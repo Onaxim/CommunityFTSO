@@ -10,20 +10,24 @@ Methods:
 
 **Examples**
 
-GET `<endpoint>/ftso/latest`
-Response: `{"epochId":"1627121643", "revealEndTime":"1627121943", "submitEndTime":"1627121763"}`
+ - GET `<endpoint>/ftso/latest`
+ - Response: `{"epochId":"1627121643", "revealEndTime":"1627121943", "submitEndTime":"1627121763"}`
 
-POST `<endpoint>/ftso/submit`
-Payload Expected: Epoch ID (Integer) for current period, provider name (String) and Array of objects [{pair: <pair|STRING>, price: "price|STRING"}, ...] 
-Responses: 
+ - POST `<endpoint>/ftso/submit`
+ - Payload Expected: Epoch ID (Integer) for current period, provider name (String) and Array of objects [{pair: <pair|STRING>, price: "price|STRING"}, ...] 
+ - Responses: 
+
 *Success*
-`{ error: false, message: 'Submission accepted.' }`
+ - `{ error: false, message: 'Submission accepted.' }`
+
 *Missing Data*
-`{ error: true, message: "Empty submissions.."}`
+ - `{ error: true, message: "Empty submissions.."}`
+
 *Missed Submit End Time*
-`{error: true, message: "You have missed the submit end time by n seconds."}`
+ - `{error: true, message: "You have missed the submit end time by n seconds."}`
+
 *Submited to Wrong EpochId*
-{error: true, message: `Submitting for incorrect epochId: <epochId> vs submitted: <x_epochId>"}`
+ - {error: true, message: `Submitting for incorrect epochId: <epochId> vs submitted: <x_epochId>"}`
 
 **Guideline**
 
