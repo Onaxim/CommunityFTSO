@@ -2,7 +2,9 @@
 Request an API key by emailing `tim@av.ax`.
 
 Endpoint: `https://vrzrc8ucp5.execute-api.ap-southeast-2.amazonaws.com` (24 Jul 21)
+
 Resource: `/ftso`
+
 Methods:
  - GET `/latest` - Get latest Epoch timings
  - POST `/submit` - Submit data
