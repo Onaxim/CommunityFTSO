@@ -27,7 +27,7 @@ Methods:
  - `{error: true, message: "You have missed the submit end time by n seconds."}`
 
 *Submited to Wrong EpochId*
- - {error: true, message: `Submitting for incorrect epochId: <epochId> vs submitted: <x_epochId>"}`
+ - `{error: true, message: Submitting for incorrect epochId: <epochId> vs submitted: <x_epochId>"}`
 
 **Guideline**
 
