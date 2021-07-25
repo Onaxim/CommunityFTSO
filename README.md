@@ -8,7 +8,8 @@ Resource: `/ftso`
 Methods:
  - GET `/latest` - Get latest Epoch timings
  - POST `/submit` - Submit data
- - GET `/epoch` Parameters: `id` - Get data for specified Epoch ID 
+ - GET `/epoch` Parameters: `id` - Get data for specified Epoch ID
+ - GET `/epochs` - Get sample (array) of epochs with provider submissions
 
 **Examples**
 
