@@ -11,6 +11,16 @@ Methods:
  - GET `/epoch` Parameters: `id` - Get data for specified Epoch ID
  - GET `/epochs` - Get sample (array) of epochs with provider submissions
 
+Authorisation:
+ - Add header with key value: `X-API-KEY` and value of your API key
+ 
+ ```
+ headers: {
+   "X-API-KEY": "<api-key>"
+ }
+ ```
+ 
+ 
 **Examples**
 
  - GET `<endpoint>/ftso/latest`
